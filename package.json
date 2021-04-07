@@ -1,6 +1,6 @@
 {
   "name": "bigdesc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Big discrete number library",
   "main": "index.js",
   "scripts": {
