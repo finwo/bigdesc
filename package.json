@@ -1,7 +1,7 @@
 {
   "name": "bigdesc",
   "version": "0.0.2",
-  "description": "Big discrete number library",
+  "description": "Big discrete integer library",
   "main": "index.js",
   "scripts": {
     "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{print $2}' | sed 's/[\",]//g' | tr -d '[[:space:]]') && npm deprecate \"bigdesc@<${PACKAGE_VERSION}\" \"Rolling release, please update to ${PACKAGE_VERSION}\"",
@@ -16,5 +16,20 @@
   "bugs": {
     "url": "https://github.com/finwo/bigdesc/issues"
   },
-  "homepage": "https://github.com/finwo/bigdesc#readme"
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/finwo"
+    },
+    {
+      "type": "liberapay",
+      "url": "https://liberapay.com/finwo"
+    }
+  ],
+  "homepage": "https://github.com/finwo/bigdesc#readme",
+  "keywords": [
+    "discrete",
+    "numbers",
+    "number"
+  ]
 }
