@@ -4,6 +4,7 @@
   "description": "Big discrete number library",
   "main": "index.js",
   "scripts": {
+    "postpublish": "PACKAGE_VERSION=$(cat package.json | grep \\\"version\\\" | head -1 | awk -F: '{print $2}' | sed 's/[\",]//g' | tr -d '[[:space:]]') && npm deprecate \"bigdesc@<${PACKAGE_VERSION}\" \"Rolling release, please update to ${PACKAGE_VERSION}\"",
     "test": "echo \"Error: no test specified\""
   },
   "repository": {
