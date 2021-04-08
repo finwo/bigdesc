@@ -69,3 +69,13 @@ If not, this method returns a boolean false.
 
 Returns a booelan true if the value held matches the given value.
 If not, this method returns a boolean false.
+
+### bigdesc.gte(value)
+
+Returns a boolean true if the value held is larger or equal to the given value.
+If not, this method returns a boolean false.
+
+### bigdesc.lte(value)
+
+Returns a boolean true if the value held is smaller or equal to the given value.
+If not, this method returns a boolean false.

@@ -131,6 +131,14 @@ Object.assign(BigDesc.prototype, {
     return this.sub(cmp).isZero();
   },
 
+  gte(value) {
+    return this.gt(value) || this.eq(value);
+  },
+
+  lte(value) {
+    return this.lt(value) || this.eq(value);
+  },
+
 });
 
 module.exports = BigDesc;
